@@ -50,12 +50,18 @@
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+
+    .footer-address-list & {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
-.footer-mailto-link:hover,
-.footer-mailto-link:focus {
-  color: var(--accent-color);
-  outline: none;
-}
+
 .footer-tel-link {
   display: block;
   width: 231px;
@@ -66,11 +72,16 @@
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
-}
-.footer-tel-link:hover,
-.footer-tel-link:focus {
-  color: var(--accent-color);
-  outline: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+
+    .footer-address-list & {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 
 .footer-list-first-side {
@@ -105,30 +116,22 @@
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
 
-.social-footer-link:hover,
-.social-footer-link:focus {
-  background-color: #2196f3;
-  outline: none;
-}
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    outline: none;
 
-.social-footer-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    & {
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 
 .footer-list-icon {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-}
-
-.footer-address-list .footer-mailto-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-address-list .footer-tel-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item {
@@ -166,10 +169,10 @@
   border-radius: 4px;
   outline: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-form-input:focus {
-  border-color: #2196f3;
+  &:focus {
+    border-color: #2196f3;
+  }
 }
 
 .footer-form-btn {
@@ -194,6 +197,11 @@
   border: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
 }
 
 .footer-form-icon {
@@ -201,9 +209,4 @@
   width: 24px;
   height: 24px;
   fill: #ffffff;
-}
-
-.footer-form-btn:focus,
-.footer-form-btn:hover {
-  background-color: #188ce8;
 }
