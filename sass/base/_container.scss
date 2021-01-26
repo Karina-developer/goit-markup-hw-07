@@ -5,13 +5,7 @@
   margin-right: auto;
   justify-content: space-between;
 
-  & .footer {
+  .header & {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-
-    .header & {
-      display: flex;
-    }
   }
 }
