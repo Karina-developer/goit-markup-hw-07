@@ -60,20 +60,20 @@
     &:focus {
       color: var(--accent-color);
       outline: none;
-
-      .navigation-list &::after {
-        position: absolute;
-        display: block;
-        top: 76px;
-        content: "";
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: var(--accent-color);
-        border-radius: 2px;
-      }
     }
   }
+}
+
+.navigation-list .navigation-link.current ::after {
+  position: absolute;
+  display: block;
+  top: 76px;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .navigation-link {
