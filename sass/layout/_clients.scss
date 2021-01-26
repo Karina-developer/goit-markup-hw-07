@@ -13,12 +13,6 @@
   margin-left: 30px;
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
 .clients-section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -35,15 +29,21 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-link:hover .icon,
-.clients-link:focus .icon {
-  fill: var(--accent-color);
-  outline: none;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #afb1b8;
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--accent-color);
+    outline: none;
+  }
 }

@@ -21,10 +21,10 @@
   width: 370px;
   height: 294px;
   flex-basis: calc(100% / 3 - 30px);
-}
 
-.about-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-content {
