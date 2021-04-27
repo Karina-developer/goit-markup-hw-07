@@ -23,7 +23,6 @@
 
 .hero-title {
   width: 696px;
-  font-style: normal;
   font-weight: 900;
   margin-top: auto;
   margin-bottom: 30px;
@@ -33,6 +32,6 @@
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 /* ============ END HERO=============== */

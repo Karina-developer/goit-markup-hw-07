@@ -8,20 +8,20 @@
 .logotipe-link {
   width: 145px;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 93px;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  text-decoration: none;
 }
+
 .logotipe-link > .logotipe-part {
   color: #000000;
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   border-bottom: 1px solid #ececec;
 }
 
@@ -34,10 +34,6 @@
 
   &:last-child {
     margin-right: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
@@ -59,12 +55,11 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
-      outline: none;
     }
   }
 }
 
-.navigation-list .navigation-link.current ::after {
+.navigation-list .navigation-link.current::after {
   position: absolute;
   display: block;
   top: 76px;
@@ -90,7 +85,6 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-    outline: none;
 
     .navigation-list & {
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,12 +94,9 @@
 
 .auth-navigation-list {
   display: flex;
-
-  & {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .auth-list-item {
@@ -133,13 +124,12 @@
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    outline: none;
+  .auth-navigation-list & {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .auth-navigation-list & {
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
   }
 }
@@ -151,18 +141,16 @@
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
-  font-style: normal;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    outline: none;
+  .auth-navigation-list & {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .auth-navigation-list & {
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
   }
 }
@@ -177,7 +165,6 @@
   .tel-link:hover &,
   .tel-link:focus & {
     fill: var(--accent-color);
-    outline: none;
   }
 }
 
@@ -191,7 +178,6 @@
   .mailto-link:hover &,
   .mailto-link:focus & {
     fill: var(--accent-color);
-    outline: none;
   }
 }
 

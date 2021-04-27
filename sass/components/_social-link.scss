@@ -5,14 +5,13 @@
   cursor: pointer;
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--background-color);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: #2196f3;
-    outline: none;
 
     & .footer {
       background-color: rgba(255, 255, 255, 0.1);
@@ -24,11 +23,6 @@
   display: flex;
 }
 
-.social-team-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .social-list-icon {
   width: 20px;
   height: 20px;
@@ -37,15 +31,31 @@
 
   .social-list-link:hover &,
   .social-list-link:focus & {
-    fill: #ffffff;
-    outline: none;
+    fill: var(--background-color);
 
     & .footer {
-      fill: #ffffff;
+      fill: var(--background-color);
     }
   }
 }
 
-.social-list-item {
-  margin-left: 10px;
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
 }
