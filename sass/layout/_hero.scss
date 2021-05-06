@@ -23,13 +23,11 @@
 
 .hero-title {
   width: 696px;
-  font-weight: 900;
+  @include font(44px, 900, 60px);
   margin-top: auto;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 44px;
-  line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);

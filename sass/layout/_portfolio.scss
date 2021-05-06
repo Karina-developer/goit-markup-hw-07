@@ -23,11 +23,9 @@
 }
 
 .portfolio-title {
-  font-weight: 700;
-  font-size: 18px;
+  @include font(18px, 700, 36px);
   margin-top: 0;
   margin-bottom: 4px;
-  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
 }

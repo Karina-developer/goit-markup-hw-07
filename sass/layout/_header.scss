@@ -8,10 +8,8 @@
 .logotipe-link {
   width: 145px;
   font-family: Raleway;
-  font-weight: 700;
+  @include font(26px, 700, 31px);
   margin-right: 93px;
-  font-size: 26px;
-  line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -42,9 +40,7 @@
   min-width: 49px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.172;
+  @include font(14px, 500, 16px);
   letter-spacing: 0.02em;
   color: var(--main-color);
 
@@ -76,9 +72,7 @@
   min-width: 49px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.172;
+  @include font(14px, 500, 16px);
   letter-spacing: 0.02em;
   color: var(--main-color);
 
@@ -115,12 +109,10 @@
   display: flex;
   align-items: center;
   min-width: 135px;
-  font-weight: 500;
+  @include font(14px, 500, 16px);
   padding-top: 32px;
   padding-bottom: 32px;
-  font-size: 14px;
   font-style: normal;
-  line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
 
@@ -139,9 +131,7 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.172;
+  @include font(14px, 500, 16px);
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
 

@@ -51,11 +51,9 @@
 
 .features-title {
   min-width: 270px;
-  font-weight: 700;
+  @include font(14px, 700, 16px);
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
