@@ -1,7 +1,6 @@
 /* ===============FOOTER==================== */
 
 .footer {
-  display: flex;
   height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -46,6 +45,7 @@
   color: var(--accent-color);
   text-decoration: none;
 }
+
 .footer-logotipe-link > .logotipe-part {
   color: var(--background-color);
 }
