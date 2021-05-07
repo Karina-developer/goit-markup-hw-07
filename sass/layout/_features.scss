@@ -21,7 +21,7 @@
   content: "";
   width: 100%;
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: var(--card-portfolio-gap);
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -29,8 +29,8 @@
 }
 
 .features-list .item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--card-portfolio-gap);
+  margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - 30px);
 }
 
@@ -54,23 +54,19 @@
   @include font(14px, 700, 16px);
   margin-top: 0;
   margin-bottom: 10px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
 }
 
 .description {
-  width: 270px;
+  @include font(14px, 400, 41px);
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
   line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--text-decoration-color);
 }
 
 .features-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--card-portfolio-gap);
 }
 
 /* =============END FEATURES============ */

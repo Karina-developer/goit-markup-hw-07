@@ -6,11 +6,11 @@
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--card-portfolio-gap);
 }
 
 .team-item {
-  padding-bottom: 30px;
+  padding-bottom: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - 30px);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -29,20 +29,16 @@
   @include font(16px, 500, 19px);
   margin-bottom: 10px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
 .team-description {
   min-width: 147px;
   height: 19px;
-  font-size: 16px;
+  @include font(16px, 400, 19px);
   margin-top: 0;
   margin-bottom: 16px;
-  line-height: 1.187;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-decoration-color);
 }
 
 .team-list-item:not(:last-child) {
@@ -50,7 +46,7 @@
 }
 
 .team-list-content-wrapper {
-  padding-top: 30px;
+  padding-top: var(--card-portfolio-gap);
   padding-left: 32px;
   padding-right: 32px;
 }

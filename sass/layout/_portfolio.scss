@@ -35,7 +35,6 @@
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.875;
-  color: var(--text-decoration-color);
 }
 
 .portfolio-list {
@@ -92,9 +91,7 @@
   width: 322px;
   height: 168px;
   text-align: left;
-  font-size: 18px;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
+  @include font(18px, 400, 28px);
   color: var(--background-color);
 }
 
@@ -110,7 +107,6 @@
   border-radius: 4px;
   padding: 6px 22px;
   line-height: 1.625;
-  letter-spacing: 0.03em;
   text-align: center;
   border: transparent;
   background-color: #f5f4fa;
