@@ -474,7 +474,7 @@ img {
   padding-bottom: 32px;
   font-style: normal;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-decoration-color);
 }
 
 .auth-navigation-list .mailto-link {
@@ -494,7 +494,7 @@ img {
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-decoration-color);
 }
 
 .auth-navigation-list .tel-link {
