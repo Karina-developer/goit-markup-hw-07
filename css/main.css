@@ -14,8 +14,7 @@
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  background-color: var(--background-color);
-  color: var(--text-decoration-color);
+  letter-spacing: 0.03em;
 }
 
 h1,
@@ -65,11 +64,11 @@ img {
 /* Кнопка */
 .modal-btn {
   font-family: inherit;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 1.875;
   padding: 10px 32px;
   min-width: 200px;
-  font-size: 16px;
-  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--background-color);
   background-color: var(--accent-color);
@@ -118,8 +117,8 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  width: var(--card-portfolio-gap);
+  height: var(--card-portfolio-gap);
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -147,7 +146,6 @@ img {
   display: block;
   width: 100%;
   height: 40px;
-  font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -207,7 +205,6 @@ img {
   display: block;
   width: 100%;
   height: 120px;
-  font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -241,9 +238,7 @@ img {
 .modal-form-policy-label {
   min-width: 400px;
   height: 24px;
-  font-size: 14px;
   line-height: 1.714;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -269,10 +264,10 @@ img {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: var(--card-portfolio-gap);
   background: #2196f3;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--background-color);
@@ -295,7 +290,6 @@ img {
   cursor: pointer;
   width: 44px;
   height: 44px;
-  background-color: var(--background-color);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -350,15 +344,14 @@ img {
 }
 
 .title {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: 50px;
-  line-height: 1.166;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
@@ -371,11 +364,10 @@ img {
 .logotipe-link {
   width: 145px;
   font-family: Raleway;
-  font-weight: 700;
-  margin-right: 93px;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.192;
-  letter-spacing: 0.03em;
+  margin-right: 93px;
   color: var(--accent-color);
 }
 
@@ -384,7 +376,6 @@ img {
 }
 
 .header {
-  background-color: var(--background-color);
   border-bottom: 1px solid #ececec;
 }
 
@@ -405,9 +396,9 @@ img {
   min-width: 49px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.172;
+  font-weight: 500;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
@@ -438,9 +429,9 @@ img {
   min-width: 49px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.172;
+  font-weight: 500;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
@@ -476,14 +467,13 @@ img {
   display: flex;
   align-items: center;
   min-width: 135px;
+  font-size: 14px;
   font-weight: 500;
+  line-height: 1.143;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-size: 14px;
   font-style: normal;
-  line-height: 1.142;
   letter-spacing: 0.02em;
-  color: var(--text-decoration-color);
 }
 
 .auth-navigation-list .mailto-link {
@@ -499,11 +489,10 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.172;
+  font-weight: 500;
+  line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--text-decoration-color);
 }
 
 .auth-navigation-list .tel-link {
@@ -543,7 +532,6 @@ img {
 /* ===========END HEADER=============== */
 /* ============HERO=============== */
 .hero-content {
-  width: 696px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -565,13 +553,13 @@ img {
 
 .hero-title {
   width: 696px;
+  font-size: 44px;
   font-weight: 900;
+  line-height: 1.364;
   margin-top: auto;
-  margin-bottom: 30px;
+  margin-bottom: var(--card-portfolio-gap);
   margin-left: auto;
   margin-right: auto;
-  font-size: 44px;
-  line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
@@ -600,7 +588,7 @@ img {
   content: "";
   width: 100%;
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: var(--card-portfolio-gap);
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -608,8 +596,8 @@ img {
 }
 
 .features-list .item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--card-portfolio-gap);
+  margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - 30px);
 }
 
@@ -630,28 +618,26 @@ img {
 
 .features-title {
   min-width: 270px;
+  font-size: 14px;
   font-weight: 700;
+  line-height: 1.143;
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
 }
 
 .description {
-  width: 270px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.929;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
   line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--text-decoration-color);
 }
 
 .features-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--card-portfolio-gap);
 }
 
 /* =============END FEATURES============ */
@@ -678,7 +664,7 @@ img {
 }
 
 .about-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--card-portfolio-gap);
 }
 
 .about-content {
@@ -698,11 +684,10 @@ img {
   position: absolute;
   width: 100%;
   height: 16px;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.142;
+  font-weight: 700;
+  line-height: 1.143;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
 }
@@ -723,16 +708,16 @@ img {
   flex-wrap: nowrap;
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-item {
-  padding-bottom: 30px;
+  padding-bottom: var(--card-portfolio-gap);
   flex-basis: calc(100% / 4 - 30px);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background: var(--background-color);
+}
+
+.team-item:not(:last-child) {
+  margin-right: var(--card-portfolio-gap);
 }
 
 .team-section {
@@ -744,12 +729,11 @@ img {
 .team-title {
   min-width: 151px;
   height: 19px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1.188;
   margin-bottom: 10px;
-  line-height: 1.187;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
@@ -757,12 +741,11 @@ img {
   min-width: 147px;
   height: 19px;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 1.188;
   margin-top: 0;
   margin-bottom: 16px;
-  line-height: 1.187;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-decoration-color);
 }
 
 .team-list-item:not(:last-child) {
@@ -770,7 +753,7 @@ img {
 }
 
 .team-list-content-wrapper {
-  padding-top: 30px;
+  padding-top: var(--card-portfolio-gap);
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -785,8 +768,8 @@ img {
 }
 
 .clients-item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--card-portfolio-gap);
+  margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 6 - 30px);
 }
 
@@ -846,11 +829,11 @@ img {
 }
 
 .portfolio-title {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
   margin-top: 0;
   margin-bottom: 4px;
-  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
 }
@@ -860,7 +843,6 @@ img {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.875;
-  color: var(--text-decoration-color);
 }
 
 .portfolio-list {
@@ -918,8 +900,8 @@ img {
   height: 168px;
   text-align: left;
   font-size: 18px;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
+  font-weight: 400;
+  line-height: 1.556;
   color: var(--background-color);
 }
 
@@ -935,7 +917,6 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   line-height: 1.625;
-  letter-spacing: 0.03em;
   text-align: center;
   border: transparent;
   background-color: #f5f4fa;
@@ -954,7 +935,6 @@ img {
 /* ===============END PORTFOLIO==================== */
 /* ===============FOOTER==================== */
 .footer {
-  display: flex;
   height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -983,9 +963,7 @@ img {
   display: block;
   width: 231px;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.714;
-  letter-spacing: 0.03em;
   color: var(--background-color);
 }
 
@@ -994,10 +972,9 @@ img {
   width: 145px;
   height: 31px;
   font-family: Raleway;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.192;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -1007,12 +984,11 @@ img {
 }
 
 .footer-mailto-link {
-  display: block;
   width: 231px;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
   font-style: normal;
-  line-height: 1.142;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1026,13 +1002,11 @@ img {
 }
 
 .footer-tel-link {
-  display: block;
   width: 231px;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
   font-style: normal;
-  line-height: 1.172;
-  letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1067,10 +1041,9 @@ img {
 .footer-title {
   min-width: 145px;
   height: 16px;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.143;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--background-color);
@@ -1086,10 +1059,9 @@ img {
 
 .footer-lead {
   display: block;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.143;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--background-color);
@@ -1123,13 +1095,12 @@ img {
   padding-right: 28px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--background-color);
   background: #2196f3;
-  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
