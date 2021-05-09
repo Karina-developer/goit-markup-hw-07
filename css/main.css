@@ -635,7 +635,7 @@ img {
   line-height: 2.929;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.714;
+  color: var(--text-decoration-color);
 }
 
 .features-item:not(:last-child) {

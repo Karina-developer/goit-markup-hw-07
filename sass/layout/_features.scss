@@ -62,7 +62,7 @@
   @include font(14px, 400, 41px);
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.714;
+  color: var(--text-decoration-color);
 }
 
 .features-item:not(:last-child) {
